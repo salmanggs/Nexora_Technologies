@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Replace https://example.com with your real address once you have one
+  (your Vercel/Render URL, or your domain). See section 5 of README.md
+  for a one-line command that does it everywhere.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://example.com/services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://example.com/portfolio.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://example.com/solutions.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://example.com/about.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://example.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://example.com/quote.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://example.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://example.com/post-ahwal-e-shahkot.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://example.com/post-facebook-automation.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://example.com/post-website-worth-it.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://example.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://example.com/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

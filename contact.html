@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us — Nexora Technologies</title>
+<meta name="description" content="Talk to Nexora Technologies. Call 0342 5844921, message us on WhatsApp, or send an enquiry — we reply within 24 hours.">
+<meta name="theme-color" content="#05070e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact Nexora Technologies">
+<meta property="og:description" content="Talk to Nexora Technologies. Call 0342 5844921, message us on WhatsApp, or send an enquiry — we reply within 24 hours.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ===== header ===== -->
+<header class="hdr">
+  <div class="hdr__in">
+    <a href="index.html" class="brand" aria-label="Nexora Technologies, home">
+      <img src="assets/img/logo.svg" alt="" class="brand__mark" width="34" height="34">
+      <span class="brand__type">
+        <span class="brand__name">NEXORA</span>
+        <span class="brand__sub">TECHNOLOGIES</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <a href="quote.html" class="btn btn--primary btn--sm hdr__cta">Get a Quote</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html" aria-current="page">Contact</a>
+  <a href="quote.html" class="btn btn--primary">Get a Quote</a>
+</div>
+
+<main id="main">
+
+<!-- ===== banner ===== -->
+<section class="banner">
+  <div class="mesh"></div>
+  <div class="glow glow--cyan" style="width:450px;height:450px;top:-190px;right:-60px"></div>
+  <div class="shell above">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span class="dim">Contact</span></nav>
+    <h1>Let&rsquo;s talk</h1>
+    <p class="lead">
+      Call, WhatsApp or send the form below. A real person reads every message, and we
+      reply within 24 hours — usually a lot sooner.
+    </p>
+  </div>
+</section>
+
+<!-- ===== contact ===== -->
+<section class="sec">
+  <div class="shell">
+    <div class="contact-grid">
+
+      <!-- form -->
+      <div class="panel" data-reveal>
+        <h3>Send us a message</h3>
+        <p class="panel__sub">
+          Tell us what you need. If you are not sure how to describe it, just write it the
+          way you would say it out loud.
+        </p>
+
+        <form class="form" data-form data-subject="Nexora — Contact form enquiry" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="c-name">Your name <span class="req">*</span></label>
+              <input type="text" id="c-name" name="name" data-label="Name" placeholder="Muhammad Ali" required autocomplete="name">
+              <span class="field__err"></span>
+            </div>
+            <div class="field">
+              <label for="c-phone">Phone / WhatsApp <span class="req">*</span></label>
+              <input type="tel" id="c-phone" name="phone" data-label="Phone" placeholder="0300 1234567" required autocomplete="tel">
+              <span class="field__err"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" data-label="Email" placeholder="you@example.com" autocomplete="email">
+            <span class="field__err"></span>
+          </div>
+
+          <div class="field">
+            <label for="c-topic">What is this about?</label>
+            <select id="c-topic" name="topic" data-label="Topic">
+              <option value="New project">New project</option>
+              <option value="Website">Website</option>
+              <option value="Mobile app">Mobile app</option>
+              <option value="Automation / bots">Automation / bots</option>
+              <option value="Business software">Business software</option>
+              <option value="Support for an existing system">Support for an existing system</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="c-message">Your message <span class="req">*</span></label>
+            <textarea id="c-message" name="message" data-label="Message" placeholder="I run a shop and track stock in a register. I need something that…" required></textarea>
+            <span class="field__err"></span>
+          </div>
+
+          <div class="form__status" role="status" aria-live="polite"></div>
+
+          <div class="row" style="gap:10px">
+            <button type="submit" class="btn btn--primary">
+              Send message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button type="button" class="btn btn--wa" data-wa-send>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7.2 3.9zm4.6-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.5-.4z"/></svg>
+              Send on WhatsApp
+            </button>
+          </div>
+
+          <p class="form__note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/></svg>
+            We use your details only to reply to this enquiry. No newsletters, no sharing with anyone else.
+          </p>
+        </form>
+      </div>
+
+      <!-- details -->
+      <div class="stack" style="gap:clamp(14px,2vw,20px)" data-reveal data-reveal-delay="100">
+        <div class="panel panel--accent">
+          <h3>Contact details</h3>
+          <p class="panel__sub">Fastest reply is WhatsApp.</p>
+
+          <div class="crow">
+            <div class="crow__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3h3l1.5 4-2 1.4a12 12 0 0 0 5.5 5.5l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3z"/></svg></div>
+            <div>
+              <div class="crow__l">Phone</div>
+              <a class="crow__v" href="tel:+923425844921" data-cfg="phone">0342 5844921</a>
+            </div>
+          </div>
+
+          <div class="crow">
+            <div class="crow__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg></div>
+            <div>
+              <div class="crow__l">Email</div>
+              <a class="crow__v" href="mailto:salmanmalhig@gmail.com" data-cfg="email">salmanmalhig@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="crow">
+            <div class="crow__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <div>
+              <div class="crow__l">Sales &amp; Marketing &mdash; M. Zuhaib Raza</div>
+              <a class="crow__v" href="tel:+923007276731">0300 7276731</a>
+              <a class="crow__v small dim" href="mailto:zuhaibzaibee8@gmail.com" style="display:block">zuhaibzaibee8@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="crow">
+            <div class="crow__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></div>
+            <div>
+              <div class="crow__l">Location</div>
+              <div class="crow__v">Shahkot<br><span class="dim small">Punjab, Pakistan</span></div>
+            </div>
+          </div>
+
+          <a href="#" data-cfg="wa" target="_blank" rel="noopener" class="btn btn--wa btn--block mt-3">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7.2 3.9zm4.6-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.5-.4z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div class="panel">
+          <h3>When we reply</h3>
+          <p class="panel__sub">Pakistan Standard Time (PKT).</p>
+          <ul class="hours">
+            <li><span>Monday &ndash; Saturday</span><strong>9:00 AM &ndash; 9:00 PM</strong></li>
+            <li><span>Sunday</span><strong>By appointment</strong></li>
+            <li><span>Urgent support</span><strong>24/7 on WhatsApp</strong></li>
+          </ul>
+          <p class="form__note mt-3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.8"/></svg>
+            Existing clients with a live system can reach us any hour if something is down.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== faq ===== -->
+<section class="sec sec--alt">
+  <div class="shell shell--narrow">
+    <div class="sec-head sec-head--center" data-reveal>
+      <p class="eyebrow eyebrow--center">Quick answers</p>
+      <h2>Before you write</h2>
+    </div>
+
+    <div class="acc" data-reveal>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false">
+          Is there any cost to getting a quote?
+          <span class="acc__sign"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc__panel"><div><p>No. The scoping call and the written scope with a fixed price are both free, and you are under no obligation to hire us afterwards. Plenty of people take our scope document and use it to get comparison quotes — that is fine.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false">
+          Can we meet in person?
+          <span class="acc__sign"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc__panel"><div><p>Yes, if you are in or near Shahkot or Faisalabad. For everyone else a video or voice call works just as well — most of our projects are delivered entirely remotely.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false">
+          My previous developer left the work unfinished. Can you take it over?
+          <span class="acc__sign"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc__panel"><div><p>Yes, we take over half-finished and abandoned projects regularly. Send us whatever you have — code, logins, or even just the live URL — and we will audit it and tell you honestly whether it is worth continuing or cheaper to rebuild.</p></div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false">
+          Which languages can we talk in?
+          <span class="acc__sign"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="acc__panel"><div><p>Urdu, Punjabi or English — whichever is comfortable. Documents and written scopes come in English by default, but we will walk you through them verbally in Urdu.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== footer ===== -->
+<footer class="ftr">
+  <div class="shell">
+    <div class="ftr__grid">
+      <div class="ftr__about">
+        <a href="index.html" class="brand" aria-label="Nexora Technologies, home">
+          <img src="assets/img/logo.svg" alt="" class="brand__mark" width="34" height="34">
+          <span class="brand__type">
+            <span class="brand__name">NEXORA</span>
+            <span class="brand__sub">TECHNOLOGIES</span>
+          </span>
+        </a>
+        <p>Nexora Technologies is a new-age tech solutions company delivering smart, scalable and innovative digital solutions for all businesses.</p>
+        <div class="ftr__tagline"><span>Build.</span><span>Automate.</span><span>Grow.</span></div>
+        <div class="ftr__social">
+          <a href="#" data-cfg="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7.2 3.9zm4.6-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.5-.4z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg>
+          </a>
+          <a href="mailto:salmanmalhig@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <div class="ftr__links">
+          <a href="services.html#web">Web Development</a>
+          <a href="services.html#mobile">Mobile App Development</a>
+          <a href="services.html#ai">AI Solutions</a>
+          <a href="services.html#automation">Automation</a>
+          <a href="services.html#software">Business Software</a>
+          <a href="services.html#cloud">Cloud &amp; DevOps</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <div class="ftr__links">
+          <a href="about.html">About Us</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+          <a href="quote.html">Get a Quote</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Get in touch</h4>
+        <div class="ftr__links">
+          <a href="tel:+923425844921" data-cfg="phone">0342 5844921</a>
+          <a href="mailto:salmanmalhig@gmail.com" data-cfg="email">salmanmalhig@gmail.com</a>
+          <a href="#" data-cfg="wa" target="_blank" rel="noopener">Message us on WhatsApp</a>
+          <span class="dim small" style="margin-top:4px">Shahkot<br>Punjab, Pakistan</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ftr__bar">
+      <p>&copy; <span data-year>2026</span> Nexora Technologies. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="contact.html">Support</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<a href="#" data-cfg="wa" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7.2 3.9zm4.6-5.8c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.7.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.5-.4z"/></svg>
+</a>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

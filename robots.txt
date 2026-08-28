@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace example.com with your real address (see README.md section 5)
+Sitemap: https://example.com/sitemap.xml

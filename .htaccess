@@ -1,0 +1,44 @@
+# Nexora Technologies — Apache config (cPanel, Hostinger, most shared hosting)
+# Netlify/Vercel/GitHub Pages ignore this file; see README.md for those.
+
+# ---- custom error page ----
+ErrorDocument 404 /404.html
+
+# ---- force https ----
+# Internal links deliberately keep the .html extension so the site behaves
+# identically on Apache, Netlify, Vercel and GitHub Pages. See README.md if
+# you later want extensionless URLs.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ---- compression ----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---- caching ----
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css            "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml       "access plus 1 year"
+  ExpiresByType image/jpeg          "access plus 1 year"
+  ExpiresByType image/png           "access plus 1 year"
+  ExpiresByType text/html           "access plus 1 hour"
+</IfModule>
+
+# ---- basic security headers ----
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# ---- default charset ----
+AddDefaultCharset UTF-8
